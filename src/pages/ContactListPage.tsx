@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useNavigate } from "react-router";
-import { Spin, Table } from "antd";
+import { Table } from "antd";
 
 import { AppLayout } from "components/AppLayout";
 
@@ -8,6 +8,7 @@ import { Contact } from "models/contact";
 import { ContactApi } from "services/api/ContactApi";
 import { getContactListColumns } from "./ContactListPage.constants";
 import { ROUTER_NAMES } from "router/routerNames";
+import { AppLoader } from "components/AppLoader";
 
 export const ContactListPage: React.FC = () => {
   const navigate = useNavigate();
@@ -39,7 +40,7 @@ export const ContactListPage: React.FC = () => {
   };
 
   if (loading) {
-    return <Spin size="large" />;
+    return <AppLoader />;
   }
   return (
     <AppLayout title="Список контактов">
