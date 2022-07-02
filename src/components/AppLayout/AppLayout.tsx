@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Col, Layout, PageHeader, PageHeaderProps, Row, Space } from "antd";
+import { Col, Layout, PageHeader, PageHeaderProps, Row } from "antd";
 
 import styles from "./AppLayout.module.scss";
 import { useNavigate } from "react-router";

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Row, Col, Spin } from "antd";
+import { Row, Spin } from "antd";
 
 export const AppLoader: React.FC = () => {
   return (
